@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="richtext_tinymce" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Rich Text (TinyMCE) Text Formatter</name>
+	<description>WYSIWYG for your text areas</description>
+	<repo type="github">https://github.com/symphonists/richtext_tinymce</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/158/</url>
+	<types>
+		<type>Text Formatters</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="community">Symphony Community</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="2.0" date="2011-03-22" min="2.2" />
+	</releases>
+</extension>
