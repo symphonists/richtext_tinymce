@@ -13,8 +13,8 @@ jQuery(document).ready(function() {
 		// block_formats: 'Paragraph=p;Header 2=h2;Header 3=h3;Header 4=h4',
 		// plugins : 'link image media code preview searchreplace paste wordcount',
 		// menu : {
-		//    edit: {title: 'Edit', items: 'copy paste pastetext | selectall'},
-		//    format: {title: 'Format', items: 'strikethrough superscript subscript | removeformat'}
+	    //	edit: {title: 'Edit', items: 'copy paste pastetext | selectall'},
+	    //	format: {title: 'Format', items: 'strikethrough superscript subscript | removeformat'}
 		// },
 		// toolbar : 'undo redo | formatselect | bold italic underline | bullist numlist | blockquote link unlink | image media | preview code searchreplace',
 		// setup: function (editor) {
