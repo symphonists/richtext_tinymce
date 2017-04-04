@@ -5,30 +5,37 @@
 */
 
 jQuery(document).ready(function() {
-	
-	jQuery('textarea.tinymce').tinymce({
-		
-		script_url: Symphony.Context.get('root') + '/extensions/richtext_tinymce/lib/tiny_mce.js',
 
-		theme: 'advanced',
-		plugins: '',
-		skin: 'symphony',
-		width: '100%',
-		theme_advanced_buttons1 : 'formatselect,bold,italic,underline,|,bullist,numlist,outdent,indent,|,blockquote,link,unlink,image,|,copy,paste,pastetext,pasteword,|,undo,redo,|,cleanup,code',
-		theme_advanced_buttons2 : '',
-		theme_advanced_buttons3 : '',
-		theme_advanced_buttons4 : '',
-		theme_advanced_toolbar_location : 'top',
-		theme_advanced_toolbar_align : 'left',
-		theme_advanced_resizing : true,
+	tinymce.init({
+		selector: 'textarea.tinymce',
+		theme : 'modern',
+		relative_urls : false,
+		// block_formats: 'Paragraph=p;Header 2=h2;Header 3=h3;Header 4=h4',
+		// plugins : 'link image media code preview searchreplace paste wordcount',
+		// menu : {
+		//    edit: {title: 'Edit', items: 'copy paste pastetext | selectall'},
+		//    format: {title: 'Format', items: 'strikethrough superscript subscript | removeformat'}
+		// },
+		// toolbar : 'undo redo | formatselect | bold italic underline | bullist numlist | blockquote link unlink | image media | preview code searchreplace',
+		// setup: function (editor) {
+		// 	editor.addButton('customimage', {
+		// 		icon: 'image',
+	    //   		onclick: function () {
+		// 			editor.insertContent('[image: <em>http://</em> caption: <em>lorem ipsum</em>]');
+		// 		}
+		//     }),
+		// 	editor.addButton('customvideo', {
+		// 		icon: 'media',
+	    //   		onclick: function () {
+		// 			editor.insertContent('[video: http://]');
+		// 		}
+		//     });
+		// },
+		// media_poster: false,
+		// media_alt_source: false,
+		// automatic_uploads: true,
+		// image_dimensions: false,
+		// image_caption: true
+  	});
 
-		template_external_list_url : 'lists/template_list.js',
-		external_link_list_url : 'lists/link_list.js',
-		external_image_list_url : 'lists/image_list.js',
-		media_external_list_url : 'lists/media_list.js',
-		
-		entities: ''
-		
-	});
-	
 });
