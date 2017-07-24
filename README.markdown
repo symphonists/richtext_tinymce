@@ -1,11 +1,5 @@
 # Rich Text (TinyMCE) Text Formatter
 
-* Version: 2.0
-* Author: Symphony Community (https://github.com/symphonists)
-* Build Date: 2011-03-22
-* Requirements: Symphony 2.2
-
-
 ## Installation
 
 1. Upload the 'richtext_tinymce' folder in this archive to your Symphony 'extensions' folder.
