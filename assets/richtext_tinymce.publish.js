@@ -10,6 +10,7 @@ jQuery(document).ready(function() {
 		selector: 'textarea.tinymce',
 		theme : 'modern',
 		relative_urls : false,
+		entity_encoding : 'raw',
 		// block_formats: 'Paragraph=p;Header 2=h2;Header 3=h3;Header 4=h4',
 		// plugins : 'link image media code preview searchreplace paste wordcount',
 		// menu : {
