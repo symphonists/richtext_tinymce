@@ -13,7 +13,12 @@
 		</author>
 	</authors>
 	<releases>
-		<release version="3.0.0" date="2017-07-24" min="2.2" max="2.x.x" />
+		<release version="3.0.1" date="2017-08-15" min="2.2" max="2.x.x">
+			- Fix a problem with entity encoding
+		</release>
+		<release version="3.0.0" date="2017-07-24" min="2.2" max="2.x.x">
+			- Update TinyMCE to 4.4.3
+		</release>
 		<release version="2.2" date="2016-11-22" min="2.3.x" />
 		<release version="2.1" date="2012-03-16" min="2.3.x" />
 		<release version="2.0" date="2011-03-22" min="2.2" max="2.2.5" />
