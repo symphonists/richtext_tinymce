@@ -46,8 +46,8 @@ if (is_uploaded_file($temp['tmp_name'])) {
 	$filetowrite = $imageFolder . $temp['name'];
 	move_uploaded_file($temp['tmp_name'], $filetowrite);
 
-	$url = str_replace($_SERVER['DOCUMENT_ROOT'], '', $imageFolder);
-	die(DOCROOT);
+	$url = str_replace(DOCROOT, '', $imageFolder);
+	die($url);
 	// Respond to the successful upload with JSON.
 	// Use a location key to specify the path to the saved image resource.
 	// { location : '/your/uploaded/image/file'}
