@@ -60,7 +60,7 @@ Class extension_richtext_tinymce extends Extension {
 		$label = Widget::Label(__('Image path'));
 		$label->appendChild(Widget::Input('settings[tinymce][imagepath]', Symphony::Configuration()->get('imagepath', 'tinymce'), 'text'));
 		$group->appendChild($label);
-		$group->appendChild(new XMLElement('p', 'The directory where uploaded images are stored (default: WORKSPACE/tinymce/images)', array('class' => 'help')));
+		$group->appendChild(new XMLElement('p', 'The directory where uploaded images are stored (default: WORKSPACE/tinymce/images) Note: Trailing slash is required', array('class' => 'help')));
 
 		$context['wrapper']->appendChild($group);
 	}
