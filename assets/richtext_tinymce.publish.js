@@ -11,7 +11,8 @@ jQuery(document).ready(function () {
 	tinymce.init({
 		selector: 'textarea.tinymce',
 		theme: 'modern',
-		relative_urls: true,
+		relative_urls: false,
+		remove_script_host: false,
 		entity_encoding: 'raw',
 		plugins: "image imagetools",
 		imagetools_proxy: 'proxy.php',
