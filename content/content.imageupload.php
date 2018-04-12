@@ -46,10 +46,12 @@ if (is_uploaded_file($temp['tmp_name'])) {
 	$filetowrite = $imageFolder . $temp['name'];
 	move_uploaded_file($temp['tmp_name'], $filetowrite);
 
+	$url = str_replace($_SERVER['DOCUMENT_ROOT'], '', $imageFolder);
+
 	// Respond to the successful upload with JSON.
 	// Use a location key to specify the path to the saved image resource.
 	// { location : '/your/uploaded/image/file'}
-	echo json_encode(array('location' => $filetowrite));
+	echo json_encode(array('location' => $filetowrite, 'url' => $url));
 } else {
 	// Notify editor that the upload failed
 	header("HTTP/1.1 500 Server Error");
