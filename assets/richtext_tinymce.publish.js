@@ -13,6 +13,7 @@ jQuery(document).ready(function () {
 		theme: 'modern',
 		relative_urls: false,
 		remove_script_host: false,
+		convert_urls: true,
 		entity_encoding: 'raw',
 		plugins: "image imagetools",
 		imagetools_proxy: 'proxy.php',
