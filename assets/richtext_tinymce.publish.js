@@ -11,11 +11,13 @@ jQuery(document).ready(function () {
 	tinymce.init({
 		selector: 'textarea.tinymce',
 		theme: 'modern',
+		menubar: "edit view insert format table tools",
+		toolbar: "undo redo formatselect bold italic underline justifyleft justifycenter justifyright justifyfull outdent indent image code",
 		relative_urls: false,
 		remove_script_host: false,
 		convert_urls: true,
 		entity_encoding: 'raw',
-		plugins: "image imagetools",
+		plugins: "image imagetools table code",
 		imagetools_proxy: 'proxy.php',
 		images_upload_url: root + "/extensions/richtext_tinymce/content/content.imageupload.php",
 		automatic_uploads: true
