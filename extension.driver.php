@@ -24,7 +24,8 @@ Class extension_richtext_tinymce extends Extension {
 
 	public function install() {
 		// set default image folder path
-		Symphony::Configuration()->set('imagepath', WORKSPACE . '/tinymce/images', 'tinymce')->write();
+		Symphony::Configuration()->set('imagepath', WORKSPACE . '/tinymce/images/', 'tinymce');
+		Symphony::Configuration()->write();
 		return (General::realiseDirectory(Symphony::Configuration()->get('imagepath', 'tinymce')));
 	}
 
