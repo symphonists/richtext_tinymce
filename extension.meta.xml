@@ -13,6 +13,10 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="3.0.2" date="2018-04-18" min="2.2" max="2.x.x">
+			- Added the image capabilities (image upload/editing) and cleaned up the options to remove unnecessary stuff
+			- Image upload path can be set in preferences 
+		</release>
 		<release version="3.0.1" date="2017-08-15" min="2.2" max="2.x.x">
 			- Fix a problem with entity encoding
 		</release>
